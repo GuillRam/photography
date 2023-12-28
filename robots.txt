@@ -1,0 +1,5 @@
+#Global
+User-agent: *
+Allow: /
+
+Sitemap: https://photographie.guillaume-ramat.com/sitemap.xml

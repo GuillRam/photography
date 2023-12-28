@@ -1,0 +1,510 @@
+/*** BODY ***/
+body {
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/*** HEADER ***/
+header {
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 5%;
+  position: fixed;
+  width: 100vw;
+  box-sizing: border-box;
+  top: 0;
+  z-index: 2;
+}
+header .logo img {
+  width: 50px;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+header nav ul li {
+  margin: 0 15px;
+}
+header nav ul li:nth-child(n + 5) {
+  display: none;
+}
+header nav ul li:last-child {
+  margin-right: 0;
+}
+header nav ul li i {
+  cursor: pointer;
+}
+header .social-networks i {
+  margin: 0 15px;
+  font-size: x-large;
+}
+header .menu-burger {
+  display: none;
+  width: 40px;
+}
+header .activeLink {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+/*** MAIN ***/
+/* FIRST BACKGROUND */
+#background {
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  text-align: center;
+  height: 100vh;
+}
+#background .banner {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 7px 0 25px 0;
+  position: absolute;
+  width: 100%;
+  margin: 40vh 0;
+}
+#background .banner h1 {
+  padding: 10px 0;
+  margin: 0 25%;
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+.button {
+  display: inline-block;
+  padding: 8px 16px;
+  text-decoration: none;
+  background-color: #4f32a4;
+  color: #fff;
+  border-radius: 5px;
+}
+.button:hover {
+  background-color: #30187a;
+  transform: scale(1.02);
+}
+
+/* MAIN PART */
+#main-section {
+  padding: 67.2px 0;
+}
+
+#main-section h1,
+#main-section h2 {
+  text-align: center;
+  color: #4f32a4;
+}
+/* PAGE ACCUEIL */
+#welcome .text,
+#shop .text,
+#contact .text {
+  width: 40%;
+  text-align: center;
+  padding: 25px 5% 44.92px;
+}
+#welcome,
+#shop,
+#contact {
+  display: flex;
+  justify-content: space-between;
+}
+#welcome p,
+#shop p,
+#contact p {
+  text-align: justify;
+  margin-bottom: 24px;
+}
+#welcome .picture {
+  background-image: url("../img/welcome.jpg");
+  background-size: cover;
+  background-position: center center;
+  width: 50%;
+}
+#shop .picture {
+  background-image: url("../img/shop.jpg");
+  background-size: cover;
+  background-position: center center;
+  width: 50%;
+}
+#contact .picture {
+  background-image: url("../img/contact.jpg");
+  background-size: cover;
+  background-position: center center;
+  width: 50%;
+}
+/* PAGE VOYAGES */
+#travels {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+#travels .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 5%;
+  width: 45%;
+  text-align: justify;
+}
+#travels .carousel {
+  height: 108vh;
+  width: 50%;
+  position: relative;
+}
+#travels .carousel ul li {
+  list-style-type: none;
+  padding: 0;
+}
+#travels .carousel button {
+  position: absolute;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 2.6rem;
+  z-index: 1;
+  cursor: pointer;
+  color: white;
+  transform: translateY(-50%);
+  top: 50%;
+}
+#prev {
+  left: 5px;
+}
+#next {
+  right: 5px;
+}
+#travels .carousel .slide {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  right: 0;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+#travels .carousel .slide.active {
+  opacity: 1;
+}
+#travels .carousel .slide img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+/* PAGE BOUTIQUE */
+#shop-page {
+  padding: 0 5%;
+  text-align: justify;
+}
+.filter {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #302b63;
+  border-radius: 70px;
+  border: 3.5px solid #4f32a4;
+  color: white;
+  box-sizing: content-box;
+  padding: 0 2rem;
+  margin-top: 25px;
+}
+.filter p {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.filter ul {
+  list-style-type: none;
+  padding: 0;
+}
+.filter ul li {
+  display: inline-block;
+}
+.filter ul li button {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+#card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+.card div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 220px;
+  background-color: #f3f3f3;
+  border-radius: 0 0 20px 20px;
+  padding-bottom: 20px;
+}
+.card-name {
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+}
+.card-price {
+  width: 40%;
+}
+.card-button {
+  width: 40%;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #4f32a4;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+}
+.card-button:hover {
+  background-color: #30187a;
+  transform: scale(1.02);
+}
+
+/* PAGE CONTACT */
+#form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+#form p {
+  text-align: center;
+}
+#form label {
+  display: block;
+  margin-bottom: 8px;
+}
+#form input,
+#form select,
+#form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+#form button {
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/*** FOOTER ***/
+footer {
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  color: white;
+  padding: 0.5rem 2.5rem;
+  text-align: center;
+  font-size: smaller;
+}
+.footer-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-section nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+.footer-section nav ul li {
+  margin-bottom: 13.33px;
+}
+.footer-section .social-networks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-section .social-networks i {
+  font-size: large;
+  margin-bottom: 10px;
+  border: 1.5px solid white;
+  border-radius: 50%;
+  width: 20px;
+  padding: 5px;
+}
+.footer-section input {
+  padding: 6px 14px;
+  border-radius: 5px;
+  margin-bottom: 16px;
+  border: none;
+}
+.footer-section button {
+  background-color: #4f32a4;
+  border: none;
+  cursor: pointer;
+  padding: 6px 14px;
+}
+
+/*** RESPONSIVE ***/
+/* RESPONSIVE TABLETTE */
+@media screen and (max-width: 1023px) {
+  /* PAGE VOYAGES */
+  #travels {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #travels .text {
+    width: 100%;
+    margin-top: 35.92px;
+  }
+  #travels .text p {
+    margin-bottom: 0;
+  }
+  #travels .carousel {
+    width: 100%;
+    height: 80vh;
+  }
+  /* FOOTER */
+  .footer-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-section .newsletter {
+    margin-bottom: 17.7333px;
+  }
+  .footer-section nav,
+  .footer-section div {
+    width: 50%;
+  }
+}
+/* RESPONSIVE MOBILE */
+@media screen and (max-width: 767px) {
+  /* HEADER */
+  header {
+    height: 67.64px;
+  }
+  header .logo img {
+    padding: 0;
+  }
+  header .social-networks {
+    display: none;
+  }
+  header .menu-burger {
+    display: block;
+    cursor: pointer;
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.92);
+    backdrop-filter: blur(7px);
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    transition: all 0.5s ease;
+  }
+  header nav ul li {
+    margin: 25px 0;
+    font-size: 1.5em;
+  }
+  header nav ul li:nth-child(n + 5) {
+    display: block;
+  }
+  .mobile-menu {
+    margin-left: 0;
+  }
+
+  /* MAIN */
+  /* PAGE ACCUEIL */
+  #welcome,
+  #contact {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #shop {
+    display: block;
+  }
+  #welcome .picture,
+  #shop .picture,
+  #contact .picture {
+    height: 250px;
+    width: 100%;
+  }
+  #welcome .text,
+  #shop .text,
+  #contact .text {
+    width: 90%;
+  }
+  #contact .text {
+    padding-bottom: 0;
+  }
+  /* PAGE BOUTIQUE */
+  .filter {
+    padding: 0 1.5rem;
+  }
+  .filter ul li button {
+    font-size: 11px;
+  }
+  .card img {
+    width: 150px;
+    height: 150px;
+  }
+  .card div {
+    width: 150px;
+    padding-bottom: 15px;
+  }
+  .card-name {
+    font-size: 11px;
+  }
+  .card-price {
+    font-size: 11px;
+  }
+  .card-button {
+    font-size: 11px;
+    padding: 5px;
+  }
+
+  /* FOOTER */
+  .footer-section nav,
+  .footer-section div {
+    width: 100%;
+  }
+}
+/* RESPONSIVE FIRST BACKGROUND (> 639px) */
+@media screen and (max-width: 639px) {
+  #background {
+    height: 90vh;
+  }
+  #background .banner {
+    margin: 32vh 0;
+  }
+  #background .banner h1 {
+    margin: 0 10% 20px;
+  }
+}

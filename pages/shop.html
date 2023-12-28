@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Transformez votre espace avec l'éclat de la photographie. Découvrez notre boutique en ligne pour des impressions uniques qui captivent l'œil et l'âme. Explorez notre collection et donnez vie à vos murs."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
+    <title>Boutique | Photographe de paysage | Guillaume Ramat</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="logo">
+        <a href="../index.html"
+          ><img src="../img/logo-web.png" alt="Logo du site"
+        /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="../pages/travels.html">Voyages</a></li>
+          <li><a href="../pages/shop.html">Boutique</a></li>
+          <li><a href="../pages/contact.html">Contact</a></li>
+          <li>
+            <a href="https://www.instagram.com" target="_blank"
+              ><i class="fa-brands fa-instagram fa-x"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com" target="_blank"
+              ><i class="fa-brands fa-x-twitter fa-x"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/" target="_blank"
+              ><i class="fa-brands fa-youtube fa-x"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="social-networks">
+        <a href="https://www.instagram.com" target="_blank"
+          ><i class="fa-brands fa-instagram fa-x"></i
+        ></a>
+        <a href="https://twitter.com" target="_blank"
+          ><i class="fa-brands fa-x-twitter fa-x"></i
+        ></a>
+        <a href="https://www.youtube.com/" target="_blank"
+          ><i class="fa-brands fa-youtube fa-x"></i
+        ></a>
+      </div>
+      <img src="../img/menu-burger.png" alt="Menu burger" class="menu-burger" />
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <section id="main-section">
+        <h1>BOUTIQUE</h1>
+        <div id="shop-page">
+          <p>
+            Une envie irrésistible de raviver vos murs et de faire naître
+            l'émerveillement dans votre quotidien ? Explorez cette collection de
+            photographies de voyage soigneusement sélectionnées pour égayer
+            votre intérieur. Chaque image raconte une histoire de découverte et
+            d'aventure, capturant des moments inoubliables des quatre coins du
+            globe. Laissez-vous transporter par la beauté de Rome, l'éclat de
+            Dubaï, la sérénité de Punta Cana, et bien plus encore. Chaque tirage
+            est plus qu'une simple décoration murale ; c'est une invitation à
+            créer une atmosphère unique, à partager des souvenirs lointains et à
+            réveiller la passion du voyage qui sommeille en vous. Explorez la
+            galerie et laissez ma collection inspirer une nouvelle énergie dans
+            votre maison. Parce que chaque coin du monde mérite une place chez
+            vous.
+          </p>
+          <div class="container-shop">
+            <div class="filter">
+              <p>Filtrer les photos par ville :</p>
+              <ul>
+                <li><button>Rome</button></li>
+                <li><button>Dubaï</button></li>
+                <li><button>Punta Cana</button></li>
+                <li><button>Las Vegas</button></li>
+                <li><button>Bodrum</button></li>
+                <li><button>Reykjavik</button></li>
+                <li><button>Rhodes</button></li>
+                <li><button>Prague</button></li>
+                <li><button>Tout afficher</button></li>
+              </ul>
+            </div>
+            <div id="card-container"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <section class="footer-section">
+        <nav>
+          <ul>
+            <li><h4>Plan du site</h4></li>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="../pages/travels.html">Voyages</a></li>
+            <li><a href="../pages/shop.html">Boutique</a></li>
+            <li><a href="../pages/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="social-networks">
+          <h4>Réseaux sociaux</h4>
+          <a href="https://www.instagram.com" target="_blank"
+            ><i class="fa-brands fa-instagram fa-x"></i
+          ></a>
+          <a href="https://twitter.com" target="_blank"
+            ><i class="fa-brands fa-x-twitter fa-x"></i
+          ></a>
+          <a href="https://www.youtube.com/" target="_blank"
+            ><i class="fa-brands fa-youtube fa-x"></i
+          ></a>
+        </div>
+        <div>
+          <h4>Liens utiles</h4>
+          <a href="../pages/legal_notice.pdf" target="_blank"
+            ><p>Mention légales</p></a
+          >
+          <a href="../pages/cgv.pdf" target="_blank"><p>CGV</p></a>
+        </div>
+        <div class="newsletter">
+          <form method="post" action="">
+            <h4><label for="email">Newsletter</label></h4>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Adresse mail"
+              required
+            />
+            <button type="submit" class="button">S'inscrire</button>
+          </form>
+        </div>
+      </section>
+      <p>&copy; 2023 Guillaume Ramat. Tous droits réservés.</p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="../js/app.js"></script>
+    <script src="../js/menu_filtrant.js"></script>
+  </body>
+</html>
